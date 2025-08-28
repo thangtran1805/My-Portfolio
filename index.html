@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio | ThangTran</title>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+
+        <div class='bx bx-menu' id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Tran Quoc Thang</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Hello, my name is Tran Quoc Thang, 
+                I am 25 years old and currently living and working in Ho Chi Minh City.
+                I have an academic backgroun d in Mathematics and Statistics,
+                but my true passion lies in Data. Throughout my university years,
+                I continuously sharpened my knowledge and skills in Data Engineering
+                and my long-term goal is to become a Full Stack Data professional — someone
+                who can work end-to-end across data collection, processing, storage, and analytics
+                to deliver real business value.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/tran.thang.785971?locale=vi_VN"><i class='bx bxl-facebook'></i></a>
+                <a href="https://github.com/thangtran1805"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/trqthang/"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.linkedin.com/in/th%E1%BA%AFng-tr%E1%BA%A7n-qu%E1%BB%91c-69807a344/"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a
+                href="cv\Tran Quoc Thang - Data Engineer.pdf"
+                class="btn"
+                download="Tran Quoc Thang - Data Engineer.pdf"
+            >
+                Download CV
+            </a>
+        </div>
+
+        <div class="home-img">
+            <img src="images/home.png" alt="">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Data Engineer!</h3>
+            <p>I am a Data Engineer with strong expertise in building end-to-end ETL/ELT pipelines,
+                designing scalable data lakes and data warehouses,
+                and ensuring data quality across the lifecycle.
+                I have hands-on experience with technologies such as
+                PySpark, Databricks, Hadoop, Airflow, and cloud platforms (Azure, AWS),
+                enabling me to process and transform large-scale datasets into valuable business insights. My focus is on delivering reliable, efficient, and well-structured data solutions that empower analytics and decision-making.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Data Engineering</h3>
+                <p>Core skills in Data Engineering include designing and implementing ETL/ELT pipelines,
+                    processing large-scale data with PySpark, Databricks, and Hadoop, and automating workflows using Airflow.
+                    Experienced with SQL, data warehouses (PostgreSQL, BigQuery), and cloud platforms (Azure, AWS).
+                    Proficient in data modeling (Star/Snowflake schema, SCD) and ensuring data quality and schema evolution with Delta Lake.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Math Teacher</h3>
+                <p>Experienced Math teacher with a strong background in Mathematics and Statistics,
+                    skilled in explaining complex concepts clearly and fostering problem-solving skills for students.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>Data Analyst</h3>
+                <p>Skilled in Data Analysis with expertise in SQL, Python (Pandas, NumPy),
+                    and data visualization tools (Power BI, Tableau),
+                    turning raw data into actionable insights to support decision-making.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/portfolio1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Big Data ELT Project</h4>
+                    <p>Developed a Big Data ELT pipeline using PySpark and Airflow to process large-scale datasets,
+                        store raw data in a Data Lake (S3), transform and load into a Data Warehouse (PostgreSQL/BigQuery),
+                        applying star schema modeling to enable efficient analytics and reporting.
+                    </p>
+                    <a href="https://github.com/thangtran1805/Big_Data_ELT_project"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Youtube Trending ELT</h4>
+                    <p>Built a YouTube Trending ELT pipeline that extracts raw JSON/CSV data,
+                        loads into a Data Lake, and transforms it into a structured Data Warehouse using PySpark.
+                        Designed dimensional models (star schema with fact and dimension tables)
+                        to analyze video trends, categories, and user engagement across different countries.</p>
+                    <a href="https://github.com/thangtran1805/Youtube-Trending-ELT"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Crypto ETL</h4>
+                    <p>Developed a Crypto ETL pipeline to collect cryptocurrency market data via APIs,
+                        store raw data in a Data Lake (S3), and transform it into a clean,
+                        structured Data Warehouse using PySpark.
+                        Designed star schema tables for price trends, trading volumes, and market analytics,
+                        enabling efficient reporting and insights for decision-making.</p>
+                    <a href="https://github.com/thangtran1805/Crypto-ETL"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>SQL Online Retail</h4>
+                    <p>Performed data analysis on an Online Retail dataset using SQL,
+                        focusing on customer segmentation, sales performance, and product trends.
+                        Designed queries to identify top customers, revenue growth, and purchasing behaviors,
+                        supporting business insights and data-driven decision-making.</p>
+                    <a href="https://github.com/thangtran1805/SQL_online_retail"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio5.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>SQL Practice Project</h4>
+                    <p>Designed and practiced complex SQL queries on multiple datasets to strengthen skills in joins,
+                        subqueries, CTEs, window functions, and data aggregation.
+                        The project focused on solving real-world business questions such as
+                        sales growth, customer behavior, and performance analytics.</p>
+                    <a href="https://github.com/thangtran1805/SQL-Practice-Project"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio6.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Portfolio</h4>
+                    <p>Developed a personal web portfolio to showcase projects, skills, and certifications as a Data Engineer.
+                        Built with HTML, CSS, and JavaScript, featuring sections for
+                        resume, projects, education, and skills, with responsive design for seamless viewing across devices.</p>
+                    <a href="https://github.com/thangtran1805/My-Portfolio"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Codehal | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
